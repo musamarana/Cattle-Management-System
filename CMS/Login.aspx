@@ -45,7 +45,7 @@
 
 
         .btn{
-            background:#2ecc71;
+            background:#3498db;
             width:125px;
             padding-top:5px;
             padding-bottom:5px;
@@ -55,51 +55,31 @@
   
             margin-top:20px;
             margin-bottom:20px;
-            float:left;
-            margin-left:16px;
             font-weight:800;
             font-size:0.8em;
         }
 
         .btn:hover{
-            background:#2CC06B; 
         }
 
-        .btn2{
-            float:left;
-            background:#3498db;
-            width:125px;  padding-top:5px;
-            padding-bottom:5px;
-            color:white;
-            border-radius:4px;
-            border: #2980b9 1px solid;
-  
-            margin-top:20px;
-            margin-bottom:20px;
-            margin-left:10px;
-            font-weight:800;
-            font-size:0.8em;
-        }
-
-        .btn2:hover{ 
-        background:#3594D2; 
-        }
     </style>    
     
 
         <div class="box">
         <h1>Login</h1>
-        <asp:TextBox ID="TextBox1" runat="server" CssClass="email" placeholder="Email"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" CssClass="email" placeholder="Username"></asp:TextBox>
         <%--<input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />--%>
         
         <asp:TextBox ID="TextBox2" runat="server" CssClass="email" placeholder="Password" TextMode="Password"></asp:TextBox>
         <%--<input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />--%>
   
         <a href="#"><asp:Button ID="Button1" runat="server" CssClass="btn" Text="Login" OnClick="Button1_Click"/> </a> <!-- End Btn -->
-            
+            <br />
+        <asp:Label ID="LabelError" runat="server" Visible="False"></asp:Label>
+            <br />
         <a href="Signup.aspx"><asp:Button ID="Button2" runat="server" CssClass="btn2" Text="Sign Up"/></a> <!-- End Btn2 -->
   
-        <asp:Label ID="LabelError" runat="server"></asp:Label>
+        
         </div> <!-- End Box -->
   
         
